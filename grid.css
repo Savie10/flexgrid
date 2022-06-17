@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style-type: none;
+  }
+  
+  body{
+    background-color: white;
+  }
+
+  nav{
+    background-color: gray;
+    height: 10vh;
+        width: 100%;
+
+  }
+   
+  
+  nav a{
+    display: inline;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    padding: 5em 2em;  
+    position: relative;
+    top: 30px;
+    left: 700px;
+  }
+  
+  .container{
+    background-color:gray;
+    display: grid;
+    height: 65vh;
+    grid-template-areas:
+      "head nav"
+      "syllabus fc"
+      "syllabus sc";
+    grid-template-columns: 30em 10em;
+    grid-template-rows: 10em 6em 7em;
+    padding: 10px 20px 2px 5px;
+    padding-left: 20px;
+    justify-content: center;
+    gap: 6px;
+    border:none;
+    margin-top: 10em;
+    
+  }
+  
+  .head{
+    background-color: red;
+    grid-area: head;
+  }
+  
+  .nav{
+    background-color: orange;
+    grid-area: nav;
+    
+  }
+  
+  .syllab{
+    background-color: green;
+    grid-area: syllabus;
+    width: 25em;
+    
+  }
+  
+  #fc{
+    background-color: cyan;
+    grid-area: fc;
+    width: 15em;
+    position: relative;
+    right: 80px;
+    
+  }
+  
+  #sc{
+    background-color: blue;
+    grid-area: sc;
+     width: 15em;
+    position: relative;
+    right: 80px
+    
+  }
+
+  @media (max-width: 1440px) {
+    nav a{
+      left: 650px;
+    }
+  }
+  
+  @media(max-width: 550px){
+     .container{
+       grid-template-areas:
+      "head nav" 
+      "syllabus fc" 
+      "syllabus sc";
+    grid-template-columns: 15em 7em ;
+    grid-template-rows: 5em 2em 3em;
+       height: 40vh;
+    
+  }
+    
+    .syllab{
+    
+    width: 12em;
+    
+  }
+  
+  #fc{
+   
+    width: 10em;
+    position: relative;
+    right: 50px;
+    
+  }
+  
+  #sc{
+   
+     width: 10em;
+    position: relative;
+    right: 50px
+    
+  }
+  nav a{
+    left: 100px
+  }
+}
+   
+  
